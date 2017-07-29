@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ePQfIA8oEeOqyfmc9MlXRQ" name="NewModel">
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_FSIBUHPjEee5U9jsnVZALA" name="NewModel">
+    <ownedAttribute xmi:id="_QipTUHPjEee5U9jsnVZALA" name="Lender" type="_Qim3EHPjEee5U9jsnVZALA"/>
+    <ownedAttribute xmi:id="_UoSTAHPjEee5U9jsnVZALA" name="RequestorActor2 [1]" type="_UoMzcHPjEee5U9jsnVZALA"/>
+    <ownedAttribute xmi:id="_WWhWcXPjEee5U9jsnVZALA" name="Platform" type="_WWgvYHPjEee5U9jsnVZALA"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_eMgbQHPjEee5U9jsnVZALA" name="Message_0"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qXbgAHPjEee5U9jsnVZALA" name="Message_1"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3xOLoHPjEee5U9jsnVZALA" name="Message_2"/>
+    <lifeline xmi:id="_QineIHPjEee5U9jsnVZALA" name="Lender" represents="_QipTUHPjEee5U9jsnVZALA" coveredBy="_eMkFoHPjEee5U9jsnVZALA"/>
+    <lifeline xmi:id="_WWhWcHPjEee5U9jsnVZALA" name="Platform" represents="_WWhWcXPjEee5U9jsnVZALA" coveredBy="_eMkssHPjEee5U9jsnVZALA _eMlTwHPjEee5U9jsnVZALA _eMl60HPjEee5U9jsnVZALA _qXcHEHPjEee5U9jsnVZALA _qXcHEXPjEee5U9jsnVZALA _qXcuIHPjEee5U9jsnVZALA _3xOLoXPjEee5U9jsnVZALA _3xOLonPjEee5U9jsnVZALA _3xOysHPjEee5U9jsnVZALA _3xOysXPjEee5U9jsnVZALA"/>
+    <lifeline xmi:id="_UoRr8HPjEee5U9jsnVZALA" name="RequestorActor2 [1]" represents="_UoSTAHPjEee5U9jsnVZALA" coveredBy="_qXbgAXPjEee5U9jsnVZALA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_eMkFoHPjEee5U9jsnVZALA" name="SubmitOffer_sender" covered="_QineIHPjEee5U9jsnVZALA" message="_eMbiwHPjEee5U9jsnVZALA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_eMkssHPjEee5U9jsnVZALA" name="SubmitOffer_receiver" covered="_WWhWcHPjEee5U9jsnVZALA" message="_eMbiwHPjEee5U9jsnVZALA"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_eMlTwHPjEee5U9jsnVZALA" name="Message_0" covered="_WWhWcHPjEee5U9jsnVZALA" finish="_eMl60HPjEee5U9jsnVZALA" start="_eMkssHPjEee5U9jsnVZALA" behavior="_eMgbQHPjEee5U9jsnVZALA"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_eMl60HPjEee5U9jsnVZALA" name="Message_0_finish" covered="_WWhWcHPjEee5U9jsnVZALA" execution="_eMlTwHPjEee5U9jsnVZALA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qXbgAXPjEee5U9jsnVZALA" name="SubmitRequest_sender" covered="_UoRr8HPjEee5U9jsnVZALA" message="_qXa48HPjEee5U9jsnVZALA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qXcHEHPjEee5U9jsnVZALA" name="SubmitRequest_receiver" covered="_WWhWcHPjEee5U9jsnVZALA" message="_qXa48HPjEee5U9jsnVZALA"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_qXcHEXPjEee5U9jsnVZALA" name="Message_1" covered="_WWhWcHPjEee5U9jsnVZALA" finish="_qXcuIHPjEee5U9jsnVZALA" start="_qXcHEHPjEee5U9jsnVZALA" behavior="_qXbgAHPjEee5U9jsnVZALA"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_qXcuIHPjEee5U9jsnVZALA" name="Message_1_finish" covered="_WWhWcHPjEee5U9jsnVZALA" execution="_qXcHEXPjEee5U9jsnVZALA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3xOLoXPjEee5U9jsnVZALA" name="Match_sender" covered="_WWhWcHPjEee5U9jsnVZALA" message="_3xNkkHPjEee5U9jsnVZALA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3xOLonPjEee5U9jsnVZALA" name="Match_receiver" covered="_WWhWcHPjEee5U9jsnVZALA" message="_3xNkkHPjEee5U9jsnVZALA"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_3xOysHPjEee5U9jsnVZALA" name="Message_2" covered="_WWhWcHPjEee5U9jsnVZALA" finish="_3xOysXPjEee5U9jsnVZALA" start="_3xOLonPjEee5U9jsnVZALA" behavior="_3xOLoHPjEee5U9jsnVZALA"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_3xOysXPjEee5U9jsnVZALA" name="Message_2_finish" covered="_WWhWcHPjEee5U9jsnVZALA" execution="_3xOysHPjEee5U9jsnVZALA"/>
+    <message xmi:id="_eMbiwHPjEee5U9jsnVZALA" name="SubmitOffer" messageSort="asynchCall" receiveEvent="_eMkssHPjEee5U9jsnVZALA" sendEvent="_eMkFoHPjEee5U9jsnVZALA"/>
+    <message xmi:id="_qXa48HPjEee5U9jsnVZALA" name="SubmitRequest" messageSort="asynchCall" receiveEvent="_qXcHEHPjEee5U9jsnVZALA" sendEvent="_qXbgAXPjEee5U9jsnVZALA"/>
+    <message xmi:id="_3xNkkHPjEee5U9jsnVZALA" name="Match" messageSort="asynchCall" receiveEvent="_3xOLonPjEee5U9jsnVZALA" sendEvent="_3xOLoXPjEee5U9jsnVZALA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Qim3EHPjEee5U9jsnVZALA" name="Actor1"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_UoMzcHPjEee5U9jsnVZALA" name="Actor2"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_WWgvYHPjEee5U9jsnVZALA" name="Actor3"/>
+</uml:Model>
