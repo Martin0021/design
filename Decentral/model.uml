@@ -29,4 +29,44 @@
   <packagedElement xmi:type="uml:Actor" xmi:id="_Qim3EHPjEee5U9jsnVZALA" name="Actor1"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_UoMzcHPjEee5U9jsnVZALA" name="Actor2"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_WWgvYHPjEee5U9jsnVZALA" name="Actor3"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_eDy80HQzEee_eIHBEubQ7g" name="CreateLoanOffer"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_h4AOQHQzEee_eIHBEubQ7g" name="CreateLoanRequest"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_lPFe0HQzEee_eIHBEubQ7g" name="MatchOfferandRequest"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_q-46QHQzEee_eIHBEubQ7g" name="GetOffers"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_v9lB0HQzEee_eIHBEubQ7g" name="GetRequests"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_0Hh5wHQzEee_eIHBEubQ7g" name="LoanPayment"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_4yw50HQzEee_eIHBEubQ7g" name="LoanDefault"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="__k8_UHQzEee_eIHBEubQ7g" name="CalculateRiskRating"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_F2tRQHQ0Eee_eIHBEubQ7g" name="System"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_USBrUHQ0Eee_eIHBEubQ7g" name="DeleteLoanOffer"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_bRWN4HQ0Eee_eIHBEubQ7g" name="Actor5">
+    <eAnnotations xmi:id="_bRW08HQ0Eee_eIHBEubQ7g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_bRW08XQ0Eee_eIHBEubQ7g" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_c31DgHQ0Eee_eIHBEubQ7g" memberEnd="_c31DgXQ0Eee_eIHBEubQ7g _c32RoHQ0Eee_eIHBEubQ7g">
+    <ownedEnd xmi:id="_c31DgXQ0Eee_eIHBEubQ7g" type="_bRWN4HQ0Eee_eIHBEubQ7g" association="_c31DgHQ0Eee_eIHBEubQ7g"/>
+    <ownedEnd xmi:id="_c32RoHQ0Eee_eIHBEubQ7g" type="_eDy80HQzEee_eIHBEubQ7g" association="_c31DgHQ0Eee_eIHBEubQ7g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fyNJ8HQ0Eee_eIHBEubQ7g" memberEnd="_fyNJ8XQ0Eee_eIHBEubQ7g _fyNxAHQ0Eee_eIHBEubQ7g">
+    <ownedEnd xmi:id="_fyNJ8XQ0Eee_eIHBEubQ7g" type="_bRWN4HQ0Eee_eIHBEubQ7g" association="_fyNJ8HQ0Eee_eIHBEubQ7g"/>
+    <ownedEnd xmi:id="_fyNxAHQ0Eee_eIHBEubQ7g" type="_USBrUHQ0Eee_eIHBEubQ7g" association="_fyNJ8HQ0Eee_eIHBEubQ7g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_iZzeUHQ0Eee_eIHBEubQ7g" memberEnd="_iZ0FYHQ0Eee_eIHBEubQ7g _iZ0scHQ0Eee_eIHBEubQ7g">
+    <ownedEnd xmi:id="_iZ0FYHQ0Eee_eIHBEubQ7g" type="_bRWN4HQ0Eee_eIHBEubQ7g" association="_iZzeUHQ0Eee_eIHBEubQ7g"/>
+    <ownedEnd xmi:id="_iZ0scHQ0Eee_eIHBEubQ7g" type="_v9lB0HQzEee_eIHBEubQ7g" association="_iZzeUHQ0Eee_eIHBEubQ7g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_kUK5QHQ0Eee_eIHBEubQ7g" name="Actor6">
+    <eAnnotations xmi:id="_kULgUHQ0Eee_eIHBEubQ7g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_kULgUXQ0Eee_eIHBEubQ7g" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_thyfYHQ0Eee_eIHBEubQ7g" memberEnd="_thzGcHQ0Eee_eIHBEubQ7g _thztgHQ0Eee_eIHBEubQ7g">
+    <ownedEnd xmi:id="_thzGcHQ0Eee_eIHBEubQ7g" type="_kUK5QHQ0Eee_eIHBEubQ7g" association="_thyfYHQ0Eee_eIHBEubQ7g"/>
+    <ownedEnd xmi:id="_thztgHQ0Eee_eIHBEubQ7g" type="_h4AOQHQzEee_eIHBEubQ7g" association="_thyfYHQ0Eee_eIHBEubQ7g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_u-7y0HQ0Eee_eIHBEubQ7g" memberEnd="_u-8Z4HQ0Eee_eIHBEubQ7g _u-8Z4XQ0Eee_eIHBEubQ7g">
+    <ownedEnd xmi:id="_u-8Z4HQ0Eee_eIHBEubQ7g" type="_kUK5QHQ0Eee_eIHBEubQ7g" association="_u-7y0HQ0Eee_eIHBEubQ7g"/>
+    <ownedEnd xmi:id="_u-8Z4XQ0Eee_eIHBEubQ7g" type="_q-46QHQzEee_eIHBEubQ7g" association="_u-7y0HQ0Eee_eIHBEubQ7g"/>
+  </packagedElement>
 </uml:Model>
