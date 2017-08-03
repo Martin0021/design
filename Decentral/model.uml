@@ -1,45 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ePQfIA8oEeOqyfmc9MlXRQ" name="NewModel">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ePQfIA8oEeOqyfmc9MlXRQ" name="Design">
   <packagedElement xmi:type="uml:Interaction" xmi:id="_FSIBUHPjEee5U9jsnVZALA" name="NewModel">
-    <ownedAttribute xmi:id="_QipTUHPjEee5U9jsnVZALA" name="Lender" type="_Qim3EHPjEee5U9jsnVZALA"/>
-    <ownedAttribute xmi:id="_UoSTAHPjEee5U9jsnVZALA" name="RequestorActor2 [1]" type="_UoMzcHPjEee5U9jsnVZALA"/>
+    <ownedAttribute xmi:id="_QipTUHPjEee5U9jsnVZALA" name="Lender" type="_Qim3EHPjEee5U9jsnVZALA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_41_jwHfzEeeB-OMsVZ2q_Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_42AK0HfzEeeB-OMsVZ2q_Q" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UoSTAHPjEee5U9jsnVZALA" name="Requestor" type="_UoMzcHPjEee5U9jsnVZALA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L4Y2oHf0EeeB-OMsVZ2q_Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L4ZdsHf0EeeB-OMsVZ2q_Q" value="1"/>
+    </ownedAttribute>
     <ownedAttribute xmi:id="_WWhWcXPjEee5U9jsnVZALA" name="Platform" type="_WWgvYHPjEee5U9jsnVZALA"/>
     <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_eMgbQHPjEee5U9jsnVZALA" name="Message_0"/>
     <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qXbgAHPjEee5U9jsnVZALA" name="Message_1"/>
     <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3xOLoHPjEee5U9jsnVZALA" name="Message_2"/>
-    <lifeline xmi:id="_QineIHPjEee5U9jsnVZALA" name="Lender" represents="_QipTUHPjEee5U9jsnVZALA" coveredBy="_eMkFoHPjEee5U9jsnVZALA"/>
-    <lifeline xmi:id="_WWhWcHPjEee5U9jsnVZALA" name="Platform" represents="_WWhWcXPjEee5U9jsnVZALA" coveredBy="_eMkssHPjEee5U9jsnVZALA _eMlTwHPjEee5U9jsnVZALA _eMl60HPjEee5U9jsnVZALA _qXcHEHPjEee5U9jsnVZALA _qXcHEXPjEee5U9jsnVZALA _qXcuIHPjEee5U9jsnVZALA _3xOLoXPjEee5U9jsnVZALA _3xOLonPjEee5U9jsnVZALA _3xOysHPjEee5U9jsnVZALA _3xOysXPjEee5U9jsnVZALA"/>
-    <lifeline xmi:id="_UoRr8HPjEee5U9jsnVZALA" name="RequestorActor2 [1]" represents="_UoSTAHPjEee5U9jsnVZALA" coveredBy="_qXbgAXPjEee5U9jsnVZALA"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_eMkFoHPjEee5U9jsnVZALA" name="SubmitOffer_sender" covered="_QineIHPjEee5U9jsnVZALA" message="_eMbiwHPjEee5U9jsnVZALA"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_eMkssHPjEee5U9jsnVZALA" name="SubmitOffer_receiver" covered="_WWhWcHPjEee5U9jsnVZALA" message="_eMbiwHPjEee5U9jsnVZALA"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3EEJYHfCEeeB-OMsVZ2q_Q" name="Message_3"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6ggbEHfCEeeB-OMsVZ2q_Q" name="Message_4"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_VFlJgHf1EeeB-OMsVZ2q_Q" name="Message_5"/>
+    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qfiz4Xf5EeeB-OMsVZ2q_Q" name="Message_6"/>
+    <lifeline xmi:id="_QineIHPjEee5U9jsnVZALA" name="Lender : ssActor1 [1]" represents="_QipTUHPjEee5U9jsnVZALA" coveredBy="_eMkFoHPjEee5U9jsnVZALA _3EEJYnfCEeeB-OMsVZ2q_Q _3EEJY3fCEeeB-OMsVZ2q_Q _3EEJZHfCEeeB-OMsVZ2q_Q _qfja8Xf5EeeB-OMsVZ2q_Q _qfja8nf5EeeB-OMsVZ2q_Q _qfja83f5EeeB-OMsVZ2q_Q"/>
+    <lifeline xmi:id="_WWhWcHPjEee5U9jsnVZALA" name="Platform" represents="_WWhWcXPjEee5U9jsnVZALA" coveredBy="_eMkssHPjEee5U9jsnVZALA _eMlTwHPjEee5U9jsnVZALA _eMl60HPjEee5U9jsnVZALA _qXcHEHPjEee5U9jsnVZALA _qXcHEXPjEee5U9jsnVZALA _qXcuIHPjEee5U9jsnVZALA _3xOLoXPjEee5U9jsnVZALA _3xOLonPjEee5U9jsnVZALA _3xOysHPjEee5U9jsnVZALA _3xOysXPjEee5U9jsnVZALA _3EEJYXfCEeeB-OMsVZ2q_Q _6ghCIHfCEeeB-OMsVZ2q_Q _VFlJgXf1EeeB-OMsVZ2q_Q"/>
+    <lifeline xmi:id="_UoRr8HPjEee5U9jsnVZALA" name="Requestor : Requestor [1]" represents="_UoSTAHPjEee5U9jsnVZALA" coveredBy="_qXbgAXPjEee5U9jsnVZALA _6ghCIXfCEeeB-OMsVZ2q_Q _6ghCInfCEeeB-OMsVZ2q_Q _6ghpMHfCEeeB-OMsVZ2q_Q _VFlwkHf1EeeB-OMsVZ2q_Q _VFlwkXf1EeeB-OMsVZ2q_Q _VFlwknf1EeeB-OMsVZ2q_Q _qfja8Hf5EeeB-OMsVZ2q_Q"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_eMkFoHPjEee5U9jsnVZALA" name="submitOffer(toPlatform, LenderKey, PlatformKey)_sender" covered="_QineIHPjEee5U9jsnVZALA" message="_eMbiwHPjEee5U9jsnVZALA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_eMkssHPjEee5U9jsnVZALA" name="submitOffer(toPlatform, LenderKey, PlatformKey)_receiver" covered="_WWhWcHPjEee5U9jsnVZALA" message="_eMbiwHPjEee5U9jsnVZALA"/>
     <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_eMlTwHPjEee5U9jsnVZALA" name="Message_0" covered="_WWhWcHPjEee5U9jsnVZALA" finish="_eMl60HPjEee5U9jsnVZALA" start="_eMkssHPjEee5U9jsnVZALA" behavior="_eMgbQHPjEee5U9jsnVZALA"/>
     <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_eMl60HPjEee5U9jsnVZALA" name="Message_0_finish" covered="_WWhWcHPjEee5U9jsnVZALA" execution="_eMlTwHPjEee5U9jsnVZALA"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qXbgAXPjEee5U9jsnVZALA" name="SubmitRequest_sender" covered="_UoRr8HPjEee5U9jsnVZALA" message="_qXa48HPjEee5U9jsnVZALA"/>
-    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qXcHEHPjEee5U9jsnVZALA" name="SubmitRequest_receiver" covered="_WWhWcHPjEee5U9jsnVZALA" message="_qXa48HPjEee5U9jsnVZALA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qXbgAXPjEee5U9jsnVZALA" name="submitRequest(toPlatform, RequestorKey, LenderKey)_sender" covered="_UoRr8HPjEee5U9jsnVZALA" message="_qXa48HPjEee5U9jsnVZALA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qXcHEHPjEee5U9jsnVZALA" name="submitRequest(toPlatform, RequestorKey, LenderKey)_receiver" covered="_WWhWcHPjEee5U9jsnVZALA" message="_qXa48HPjEee5U9jsnVZALA"/>
     <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_qXcHEXPjEee5U9jsnVZALA" name="Message_1" covered="_WWhWcHPjEee5U9jsnVZALA" finish="_qXcuIHPjEee5U9jsnVZALA" start="_qXcHEHPjEee5U9jsnVZALA" behavior="_qXbgAHPjEee5U9jsnVZALA"/>
     <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_qXcuIHPjEee5U9jsnVZALA" name="Message_1_finish" covered="_WWhWcHPjEee5U9jsnVZALA" execution="_qXcHEXPjEee5U9jsnVZALA"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3xOLoXPjEee5U9jsnVZALA" name="Match_sender" covered="_WWhWcHPjEee5U9jsnVZALA" message="_3xNkkHPjEee5U9jsnVZALA"/>
     <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3xOLonPjEee5U9jsnVZALA" name="Match_receiver" covered="_WWhWcHPjEee5U9jsnVZALA" message="_3xNkkHPjEee5U9jsnVZALA"/>
     <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_3xOysHPjEee5U9jsnVZALA" name="Message_2" covered="_WWhWcHPjEee5U9jsnVZALA" finish="_3xOysXPjEee5U9jsnVZALA" start="_3xOLonPjEee5U9jsnVZALA" behavior="_3xOLoHPjEee5U9jsnVZALA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3EEJYXfCEeeB-OMsVZ2q_Q" name="SendCollateral(toLender, PlatformKey, LenderKey)_sender" covered="_WWhWcHPjEee5U9jsnVZALA" message="_3EDiUHfCEeeB-OMsVZ2q_Q"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3EEJYnfCEeeB-OMsVZ2q_Q" name="SendCollateral(toLender, PlatformKey, LenderKey)_receiver" covered="_QineIHPjEee5U9jsnVZALA" message="_3EDiUHfCEeeB-OMsVZ2q_Q"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_3EEJY3fCEeeB-OMsVZ2q_Q" name="Message_3" covered="_QineIHPjEee5U9jsnVZALA" finish="_3EEJZHfCEeeB-OMsVZ2q_Q" start="_3EEJYnfCEeeB-OMsVZ2q_Q" behavior="_3EEJYHfCEeeB-OMsVZ2q_Q"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_3EEJZHfCEeeB-OMsVZ2q_Q" name="Message_3_finish" covered="_QineIHPjEee5U9jsnVZALA" execution="_3EEJY3fCEeeB-OMsVZ2q_Q"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6ghCIHfCEeeB-OMsVZ2q_Q" name="SendAsets(Requestor)_sender" covered="_WWhWcHPjEee5U9jsnVZALA" message="_6gf0AHfCEeeB-OMsVZ2q_Q"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6ghCIXfCEeeB-OMsVZ2q_Q" name="SendAsets(Requestor)_receiver" covered="_UoRr8HPjEee5U9jsnVZALA" message="_6gf0AHfCEeeB-OMsVZ2q_Q"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_6ghCInfCEeeB-OMsVZ2q_Q" name="Message_4" covered="_UoRr8HPjEee5U9jsnVZALA" finish="_6ghpMHfCEeeB-OMsVZ2q_Q" start="_6ghCIXfCEeeB-OMsVZ2q_Q" behavior="_6ggbEHfCEeeB-OMsVZ2q_Q"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_6ghpMHfCEeeB-OMsVZ2q_Q" name="Message_4_finish" covered="_UoRr8HPjEee5U9jsnVZALA" execution="_6ghCInfCEeeB-OMsVZ2q_Q"/>
     <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_3xOysXPjEee5U9jsnVZALA" name="Message_2_finish" covered="_WWhWcHPjEee5U9jsnVZALA" execution="_3xOysHPjEee5U9jsnVZALA"/>
-    <message xmi:id="_eMbiwHPjEee5U9jsnVZALA" name="SubmitOffer" messageSort="asynchCall" receiveEvent="_eMkssHPjEee5U9jsnVZALA" sendEvent="_eMkFoHPjEee5U9jsnVZALA"/>
-    <message xmi:id="_qXa48HPjEee5U9jsnVZALA" name="SubmitRequest" messageSort="asynchCall" receiveEvent="_qXcHEHPjEee5U9jsnVZALA" sendEvent="_qXbgAXPjEee5U9jsnVZALA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VFlJgXf1EeeB-OMsVZ2q_Q" name="SendCollateral_sender" covered="_WWhWcHPjEee5U9jsnVZALA" message="_VFkicHf1EeeB-OMsVZ2q_Q"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VFlwkHf1EeeB-OMsVZ2q_Q" name="SendCollateral_receiver" covered="_UoRr8HPjEee5U9jsnVZALA" message="_VFkicHf1EeeB-OMsVZ2q_Q"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_VFlwkXf1EeeB-OMsVZ2q_Q" name="Message_5" covered="_UoRr8HPjEee5U9jsnVZALA" finish="_VFlwknf1EeeB-OMsVZ2q_Q" start="_VFlwkHf1EeeB-OMsVZ2q_Q" behavior="_VFlJgHf1EeeB-OMsVZ2q_Q"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_VFlwknf1EeeB-OMsVZ2q_Q" name="Message_5_finish" covered="_UoRr8HPjEee5U9jsnVZALA" execution="_VFlwkXf1EeeB-OMsVZ2q_Q"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qfja8Hf5EeeB-OMsVZ2q_Q" name="SendAssets_sender" covered="_UoRr8HPjEee5U9jsnVZALA" message="_qfiz4Hf5EeeB-OMsVZ2q_Q"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qfja8Xf5EeeB-OMsVZ2q_Q" name="SendAssets_receiver" covered="_QineIHPjEee5U9jsnVZALA" message="_qfiz4Hf5EeeB-OMsVZ2q_Q"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_qfja8nf5EeeB-OMsVZ2q_Q" name="Message_6" covered="_QineIHPjEee5U9jsnVZALA" finish="_qfja83f5EeeB-OMsVZ2q_Q" start="_qfja8Xf5EeeB-OMsVZ2q_Q" behavior="_qfiz4Xf5EeeB-OMsVZ2q_Q"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_qfja83f5EeeB-OMsVZ2q_Q" name="Message_6_finish" covered="_QineIHPjEee5U9jsnVZALA" execution="_qfja8nf5EeeB-OMsVZ2q_Q"/>
+    <message xmi:id="_eMbiwHPjEee5U9jsnVZALA" name="submitOffer(toPlatform, LenderKey, PlatformKey)" messageSort="asynchCall" receiveEvent="_eMkssHPjEee5U9jsnVZALA" sendEvent="_eMkFoHPjEee5U9jsnVZALA"/>
+    <message xmi:id="_qXa48HPjEee5U9jsnVZALA" name="submitRequest(toPlatform, RequestorKey, LenderKey)" messageSort="asynchCall" receiveEvent="_qXcHEHPjEee5U9jsnVZALA" sendEvent="_qXbgAXPjEee5U9jsnVZALA"/>
     <message xmi:id="_3xNkkHPjEee5U9jsnVZALA" name="Match" messageSort="asynchCall" receiveEvent="_3xOLonPjEee5U9jsnVZALA" sendEvent="_3xOLoXPjEee5U9jsnVZALA"/>
+    <message xmi:id="_3EDiUHfCEeeB-OMsVZ2q_Q" name="SendCollateral(toLender, PlatformKey, LenderKey)" messageSort="asynchCall" receiveEvent="_3EEJYnfCEeeB-OMsVZ2q_Q" sendEvent="_3EEJYXfCEeeB-OMsVZ2q_Q"/>
+    <message xmi:id="_6gf0AHfCEeeB-OMsVZ2q_Q" name="SendAsets(Requestor)" messageSort="asynchCall" receiveEvent="_6ghCIXfCEeeB-OMsVZ2q_Q" sendEvent="_6ghCIHfCEeeB-OMsVZ2q_Q"/>
+    <message xmi:id="_VFkicHf1EeeB-OMsVZ2q_Q" name="SendCollateral" messageSort="asynchCall" receiveEvent="_VFlwkHf1EeeB-OMsVZ2q_Q" sendEvent="_VFlJgXf1EeeB-OMsVZ2q_Q"/>
+    <message xmi:id="_qfiz4Hf5EeeB-OMsVZ2q_Q" name="SendAssets" messageSort="asynchCall" receiveEvent="_qfja8Xf5EeeB-OMsVZ2q_Q" sendEvent="_qfja8Hf5EeeB-OMsVZ2q_Q"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_Qim3EHPjEee5U9jsnVZALA" name="Actor1"/>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_UoMzcHPjEee5U9jsnVZALA" name="Actor2"/>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_WWgvYHPjEee5U9jsnVZALA" name="Actor3"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Qim3EHPjEee5U9jsnVZALA" name="Lender"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_UoMzcHPjEee5U9jsnVZALA" name="Requestor"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_WWgvYHPjEee5U9jsnVZALA" name="Platform"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_eDy80HQzEee_eIHBEubQ7g" name="CreateLoanOffer"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_h4AOQHQzEee_eIHBEubQ7g" name="CreateLoanRequest"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_lPFe0HQzEee_eIHBEubQ7g" name="MatchOfferandRequest"/>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_q-46QHQzEee_eIHBEubQ7g" name="GetOffers"/>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_v9lB0HQzEee_eIHBEubQ7g" name="GetRequests"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_q-46QHQzEee_eIHBEubQ7g" name="GetLoanOffers"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_v9lB0HQzEee_eIHBEubQ7g" name="GetLoanRequests"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_0Hh5wHQzEee_eIHBEubQ7g" name="LoanPayment"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_4yw50HQzEee_eIHBEubQ7g" name="LoanDefault"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="__k8_UHQzEee_eIHBEubQ7g" name="CalculateRiskRating"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_F2tRQHQ0Eee_eIHBEubQ7g" name="System"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_USBrUHQ0Eee_eIHBEubQ7g" name="DeleteLoanOffer"/>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_bRWN4HQ0Eee_eIHBEubQ7g" name="Actor5">
+  <packagedElement xmi:type="uml:Actor" xmi:id="_bRWN4HQ0Eee_eIHBEubQ7g" name="LoanOfferer">
     <eAnnotations xmi:id="_bRW08HQ0Eee_eIHBEubQ7g" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <details xmi:id="_bRW08XQ0Eee_eIHBEubQ7g" key="Human"/>
     </eAnnotations>
@@ -56,7 +86,7 @@
     <ownedEnd xmi:id="_iZ0FYHQ0Eee_eIHBEubQ7g" type="_bRWN4HQ0Eee_eIHBEubQ7g" association="_iZzeUHQ0Eee_eIHBEubQ7g"/>
     <ownedEnd xmi:id="_iZ0scHQ0Eee_eIHBEubQ7g" type="_v9lB0HQzEee_eIHBEubQ7g" association="_iZzeUHQ0Eee_eIHBEubQ7g"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_kUK5QHQ0Eee_eIHBEubQ7g" name="Actor6">
+  <packagedElement xmi:type="uml:Actor" xmi:id="_kUK5QHQ0Eee_eIHBEubQ7g" name="LoanRequestor">
     <eAnnotations xmi:id="_kULgUHQ0Eee_eIHBEubQ7g" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <details xmi:id="_kULgUXQ0Eee_eIHBEubQ7g" key="Human"/>
     </eAnnotations>
@@ -69,4 +99,48 @@
     <ownedEnd xmi:id="_u-8Z4HQ0Eee_eIHBEubQ7g" type="_kUK5QHQ0Eee_eIHBEubQ7g" association="_u-7y0HQ0Eee_eIHBEubQ7g"/>
     <ownedEnd xmi:id="_u-8Z4XQ0Eee_eIHBEubQ7g" type="_q-46QHQzEee_eIHBEubQ7g" association="_u-7y0HQ0Eee_eIHBEubQ7g"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_zqPkUHe2EeeB-OMsVZ2q_Q" name="AcceptLoanRequest"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_8tiJwHe2EeeB-OMsVZ2q_Q" memberEnd="_8tiw0He2EeeB-OMsVZ2q_Q _8tj-8He2EeeB-OMsVZ2q_Q">
+    <ownedEnd xmi:id="_8tiw0He2EeeB-OMsVZ2q_Q" type="_bRWN4HQ0Eee_eIHBEubQ7g" association="_8tiJwHe2EeeB-OMsVZ2q_Q"/>
+    <ownedEnd xmi:id="_8tj-8He2EeeB-OMsVZ2q_Q" type="_zqPkUHe2EeeB-OMsVZ2q_Q" association="_8tiJwHe2EeeB-OMsVZ2q_Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_D5HmsHe3EeeB-OMsVZ2q_Q" name="DeleteLoanOffer"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_MIajYHe3EeeB-OMsVZ2q_Q" memberEnd="_MIbKcHe3EeeB-OMsVZ2q_Q _MIbxgHe3EeeB-OMsVZ2q_Q">
+    <ownedEnd xmi:id="_MIbKcHe3EeeB-OMsVZ2q_Q" type="_D5HmsHe3EeeB-OMsVZ2q_Q" association="_MIajYHe3EeeB-OMsVZ2q_Q"/>
+    <ownedEnd xmi:id="_MIbxgHe3EeeB-OMsVZ2q_Q" type="_kUK5QHQ0Eee_eIHBEubQ7g" association="_MIajYHe3EeeB-OMsVZ2q_Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_W1OrYHe3EeeB-OMsVZ2q_Q" memberEnd="_W1PScHe3EeeB-OMsVZ2q_Q _W1P5gHe3EeeB-OMsVZ2q_Q">
+    <ownedEnd xmi:id="_W1PScHe3EeeB-OMsVZ2q_Q" type="_F2tRQHQ0Eee_eIHBEubQ7g" association="_W1OrYHe3EeeB-OMsVZ2q_Q"/>
+    <ownedEnd xmi:id="_W1P5gHe3EeeB-OMsVZ2q_Q" type="_4yw50HQzEee_eIHBEubQ7g" association="_W1OrYHe3EeeB-OMsVZ2q_Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_YCvnYHe3EeeB-OMsVZ2q_Q" memberEnd="_YCvnYXe3EeeB-OMsVZ2q_Q _YCwOcHe3EeeB-OMsVZ2q_Q">
+    <ownedEnd xmi:id="_YCvnYXe3EeeB-OMsVZ2q_Q" type="_F2tRQHQ0Eee_eIHBEubQ7g" association="_YCvnYHe3EeeB-OMsVZ2q_Q"/>
+    <ownedEnd xmi:id="_YCwOcHe3EeeB-OMsVZ2q_Q" type="_lPFe0HQzEee_eIHBEubQ7g" association="_YCvnYHe3EeeB-OMsVZ2q_Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ZPUvQHe3EeeB-OMsVZ2q_Q" memberEnd="_ZPUvQXe3EeeB-OMsVZ2q_Q _ZPV9YHe3EeeB-OMsVZ2q_Q">
+    <ownedEnd xmi:id="_ZPUvQXe3EeeB-OMsVZ2q_Q" type="_F2tRQHQ0Eee_eIHBEubQ7g" association="_ZPUvQHe3EeeB-OMsVZ2q_Q"/>
+    <ownedEnd xmi:id="_ZPV9YHe3EeeB-OMsVZ2q_Q" type="__k8_UHQzEee_eIHBEubQ7g" association="_ZPUvQHe3EeeB-OMsVZ2q_Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_b6YAQHe3EeeB-OMsVZ2q_Q" name="AcceptLoanOffer"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_e7zw8He3EeeB-OMsVZ2q_Q" memberEnd="_e7zw8Xe3EeeB-OMsVZ2q_Q _e70YAHe3EeeB-OMsVZ2q_Q">
+    <ownedEnd xmi:id="_e7zw8Xe3EeeB-OMsVZ2q_Q" type="_kUK5QHQ0Eee_eIHBEubQ7g" association="_e7zw8He3EeeB-OMsVZ2q_Q"/>
+    <ownedEnd xmi:id="_e70YAHe3EeeB-OMsVZ2q_Q" type="_b6YAQHe3EeeB-OMsVZ2q_Q" association="_e7zw8He3EeeB-OMsVZ2q_Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_iMUfcHe3EeeB-OMsVZ2q_Q" memberEnd="_iMUfcXe3EeeB-OMsVZ2q_Q _iMVGgHe3EeeB-OMsVZ2q_Q">
+    <ownedEnd xmi:id="_iMUfcXe3EeeB-OMsVZ2q_Q" type="_0Hh5wHQzEee_eIHBEubQ7g" association="_iMUfcHe3EeeB-OMsVZ2q_Q"/>
+    <ownedEnd xmi:id="_iMVGgHe3EeeB-OMsVZ2q_Q" type="_kUK5QHQ0Eee_eIHBEubQ7g" association="_iMUfcHe3EeeB-OMsVZ2q_Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_1O8b0He3EeeB-OMsVZ2q_Q" name="EndUserClient">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_9zTCgHe3EeeB-OMsVZ2q_Q" client="_1O8b0He3EeeB-OMsVZ2q_Q" supplier="_8WtvwHe3EeeB-OMsVZ2q_Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_8WtvwHe3EeeB-OMsVZ2q_Q" name="ServiceInterface">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_aFMx4He4EeeB-OMsVZ2q_Q" client="_8WtvwHe3EeeB-OMsVZ2q_Q" supplier="_VjzDQHe4EeeB-OMsVZ2q_Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_OJZuQHe4EeeB-OMsVZ2q_Q" name="System">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_Q84igHe4EeeB-OMsVZ2q_Q" client="_OJZuQHe4EeeB-OMsVZ2q_Q" supplier="_8WtvwHe3EeeB-OMsVZ2q_Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_VjzDQHe4EeeB-OMsVZ2q_Q" name="Blockchain">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_YVOMkHe5EeeB-OMsVZ2q_Q" client="_VjzDQHe4EeeB-OMsVZ2q_Q" supplier="_UpN04He5EeeB-OMsVZ2q_Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_UpN04He5EeeB-OMsVZ2q_Q" name="Storage"/>
 </uml:Model>
